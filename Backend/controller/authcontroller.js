@@ -10,7 +10,7 @@ console.log(req.body)
         if (error) {
             return res.status(400).send({ message: error.details[0].message });
         }
-conso
+
         const user = await User.findOne({ email }); // Find user by email
     console.log.log(user)
 
